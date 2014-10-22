@@ -1,7 +1,7 @@
-#title		:PythonCode.py
+#title		:pythonPrimes.py
 #author		:Alex Ciaramella
 #date		:10/22/14
-#usage		:python PythonCode.py
+#usage		:python pythonPrimes.py
 
 #Main:
 #	Prompts user to enter a number and then loops
@@ -15,7 +15,7 @@ def Main():
 	#Loop from 0 to entered number
 	for x in range (0,n):
 		#check if number is prime
-		if isPrime(n):
+		if isPrime(x):
 			print x
 
 #isPrime(x):
