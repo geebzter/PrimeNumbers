@@ -29,11 +29,15 @@ def isPrime(x):
 	#0, 1, and negative integers are not prime
 	if x < 2:
 		return False
+	elif x == 2:
+		return True
+	elif x % 2 == 0:
+		return False
 
 	lastdivisor = int(sqrt(x))
 
 	#loop from 2 to the last possible divisor
-	for i in range(2, lastdivisor+1):
+	for i in range(3, lastdivisor+1, 2):
 		#if x  is evenly divisible(no remainder)
 		#by any number i < x, then it is not prime
 		#therefore return false 
